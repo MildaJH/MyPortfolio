@@ -8,7 +8,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color:rgb(208, 232, 244);
+  background-color: rgb(208, 232, 244);
 }
 
 h1,
@@ -24,6 +24,7 @@ h6 {
 
 p {
   margin: 0;
+  font-size: large;
 }
 
 section {
@@ -69,7 +70,7 @@ header {
   text-decoration-thickness: 5px;
 }
 
-ul{
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -107,17 +108,17 @@ li {
 }
 
 .portfolio-examples {
-display: grid;
-padding: 50px;
-min-height: 500px;
-height: 150vh;
-gap: 2em;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 35% 35% 35%;
-grid-template-areas:
-"portfolio1          portfolio1"
-"portfolio2          portfolio3"
-"portfolio4          portfolio5";
+  display: grid;
+  padding: 50px;
+  min-height: 500px;
+  height: 150vh;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 35% 35% 35%;
+  grid-template-areas:
+    "portfolio1          portfolio1"
+    "portfolio2          portfolio3"
+    "portfolio4          portfolio5";
 }
 
 .portfolio-item {
@@ -126,7 +127,7 @@ grid-template-areas:
   object-fit: fill;
   object-position: center;
 }
-  
+
 
 #portfolio1 {
   grid-area: portfolio1;
@@ -170,7 +171,10 @@ footer {
   justify-content: flex-end;
   gap: 3rem;
   text-decoration: underline;
+  cursor: pointer;
+  float: left;
 }
+
 @media (max-width: 540px) {
   * {
     background-color: green;
@@ -182,16 +186,14 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 300px 300px 300px 300px 300px;
     grid-template-areas:
-    "portfolio1"
-    "portfolio2"          
-    "portfolio3"
-    "portfolio4"         
-    "portfolio5";
-    }
+      "portfolio1"
+      "portfolio2"
+      "portfolio3"
+      "portfolio4"
+      "portfolio5";
+  }
 
-    footer {
-      position: static;
-    }
+  footer {
+    position: static;
+  }
 }
-
-    
