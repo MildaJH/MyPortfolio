@@ -8,7 +8,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgb(208, 232, 244);
+  background-color: white;
 }
 
 h1,
@@ -44,12 +44,14 @@ section {
 }
 
 header {
-  background-color: rgb(82, 94, 160);
+  background-color: rgb(71, 164, 39);
   margin-bottom: 0;
 }
 
-#navBar h1 {
+h1 {
   width: 25%;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
   font-weight: 500;
 }
 
@@ -88,7 +90,7 @@ li {
   justify-content: space-between;
   align-items: center;
   align-content: flex-start;
-  background-image: url('..//images/intro-background.jpg');
+  background-image: url('..//images/intro-background3.jpg');
   background-size: cover;
 }
 
