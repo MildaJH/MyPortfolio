@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -7,6 +8,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color:rgb(208, 232, 244);
 }
 
 h1,
@@ -16,8 +18,180 @@ h4,
 h5,
 h6 {
   margin: 0;
+  line-height: 1em;
+  color: black;
 }
 
 p {
   margin: 0;
 }
+
+section {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+header {
+  background-color: rgb(82, 94, 160);
+  margin-bottom: 0;
+}
+
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.subtitle {
+  padding: 10px;
+  margin: 10px;
+  flex-direction: row;
+  text-decoration: underline;
+  font-size: large;
+  cursor: pointer;
+  text-decoration-thickness: 5px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+.intro-section {
+  position: static;
+  padding: 5em 2em;
+  display: flex;
+  height: 5em;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  background-image: url('..//images/intro-background.jpg');
+  background-size: cover;
+}
+
+.intro-photo {
+  width: 140px;
+  height: 140px;
+}
+
+
+.about-section {
+  position: relative;
+  display: flex;
+  height: 10em;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.portfolio-examples {
+display: grid;
+padding: 50px;
+min-height: 500px;
+height: 150vh;
+gap: 2em;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 35% 35% 35%;
+grid-template-areas:
+"portfolio1          portfolio1"
+"portfolio2          portfolio3"
+"portfolio4          portfolio5";
+}
+
+.portfolio-item {
+  width: 350px;
+  height: 350px;
+  object-fit: fill;
+  object-position: center;
+}
+  
+
+#portfolio1 {
+  grid-area: portfolio1;
+  background-image: url("../images/02-portfolio-1.jpg");
+  width: 100%;
+}
+
+#portfolio2 {
+  grid-area: portfolio2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#portfolio3 {
+  grid-area: portfolio3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#portfolio4 {
+  grid-area: portfolio4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#portfolio5 {
+  grid-area: portfolio5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+footer {
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact-section-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 3rem;
+  text-decoration: underline;
+}
+@media (max-width: 540px) {
+  * {
+    background-color: green;
+  }
+
+  .portfolio-examples {
+    padding: 50px;
+    height: 260vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-areas:
+    "portfolio1"
+    "portfolio2"          
+    "portfolio3"
+    "portfolio4"         
+    "portfolio5";
+    }
+
+    footer {
+      position: static;
+    }
+}
+
+    

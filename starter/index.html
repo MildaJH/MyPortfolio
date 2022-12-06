@@ -6,70 +6,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Milda// Front End Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
+  <!-- navigation -->
   <header>
-    <h1>Milda Jancauskaite</h1>
-    <p class="subtitle"> About me</p>
-    <p class="subtitle"> Work</p>
-    <p class="subtitle"> Contact Me</p>
-    <p class="subtitle"> Resume</p>
-    <img class="intro-photo" src="images/intro-photo.jpeg" alt="picture of Milda">
-    <nav>
+    <div class="navBar" id="name">
+      <h1>Milda Jancauskaite</h1>
+      </div>
+      <nav>
+      <div class="navBar" id="navigation">
+        <ul class="menu">
+        <li><a class="subtitle" href="#about"> About me</a></li>
+        <li><a class="subtitle" href="#work"> Work</a></li>
+        <li><a class="subtitle" href="#contact"> Contact Me</a></li>
+      </ul>
+      </div>
     </nav>
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
+  <section class="intro-section">
+    <div class="intro">
       <h2>Front End Developer</h2>
+      </div>
+      <div>
+      <img class="intro-photo" src="images/intro-photo.jpeg" alt="picture of Milda">
     </div>
   </section>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <p>Hi, I am Milda Jancauskaite, front end Developer wannabe based in UK.</p>
-    </section>
+  <!-- about me -->
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
+  <section>
+    <div class="about-section" id="about">
+      <div class="title-box">
+        <h2>About Me</h2>
+      </div>
+    </div>
+    <div class="about-text">
+      <p>Hi, I am Milda, front end Developer wannabe based in UK. This is my first ever Web development portfolio and I have nothing to add to it at the moment but wait to be surprised!</p>
+    </div>
+  </section>
+
+  <!-- portfolio container -->
+  <section>
+    <div class="title-box">
       <h2>Work</h2>
-      <article class="portfolio-item">
-        <h3 class="portfolio-title">Title of some sort</h3>
-      <img class="portfolio-img" src="images/02-portfolio-1.jpg" alt="Red lights">
-    </article>
-    <article>
-      <h3 class="portfolio-title">Title of some sort</h3>
-      <img class="portfolio-img" src="images/02-portfolio-2.jpg" alt="">
-    </article>
-    <article>
-      <h3 class="portfolio-title">Title of some sort</h3>
-      <img class="portfolio-img" src="images/02-portfolio-3.jpg" alt="">
-    </article>
-    <article>
-      <h3 class="portfolio-title">Title of some sort</h3>
-      <img class="portfolio-img" src="images/02-portfolio-4.jpg" alt="">
-    </article>
-    <article>
-      <h3 class="portfolio-title">Title of some sort</h3>
-      <img class="portfolio-img" src="images/02-run-buddy.jpg" alt="">
-    </article>
-    </section>
+    </div>
+    <div class="portfolio-examples" id="work">
+      <article class="portfolio-item" id="portfolio1">
+        <h3 class="portfolio-title">Red LEDs</h3>
+        <a href="https://github.com/MildaJH?tab=repositories">Check it out</a>
+      </article>
+      <article class="portfolio-item" id="portfolio2">
+        <h3 class="portfolio-title">Calculator</h3>
+        <a href="https://github.com/MildaJH?tab=repositories">Check it out</a>
+      </article>
+      <article class="portfolio-item" id="portfolio3">
+        <h3 class="portfolio-title">Vintage car</h3>
+        <a href="https://github.com/MildaJH?tab=repositories">Check it out</a>
+      </article>
+      <article class="portfolio-item" id="portfolio4">
+        <h3 class="portfolio-title">Surfing</h3>
+        <a href="https://github.com/MildaJH?tab=repositories">Check it out</a>
+      </article>
+      <article class="portfolio-item" id="portfolio5">
+        <h3 class="portfolio-title">Run buddy</h3>
+        <a href="https://github.com/MildaJH?tab=repositories">Check it out</a>
+      </article>
+    </div>
+  </section>
+  
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <p>07777777777</p>
-      <p>mildaj@website.com</p>
-      <p>GitHub</p>
-      <p>LinkedIn</p>
-    </section>
-  </main>
+  <!-- contact -->
+  <footer>
+    <div class="container-section" id="contact">
+      <div class="title-box">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-section-right">
+        <p class="contact-item">07777777777</p>
+        <p class="contact-item">mildaj@website.com</p>
+        <p class="contact-item">GitHub</p>
+        <p class="contact-item">LinkedIn</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
